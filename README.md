@@ -12,63 +12,72 @@ The rover is equipped with a series of advanced sensors (including spectrometers
 
 ### Navigation and Positiong
 
-### *Move(location1, location2)*
-This action is used to move from one location to another. 
-To compute this action the rover must have the position sensor activated and it has to be destabilized.
-
-### *Activate_pos_sensor(base, IMU, stereocamera)*
+* <h4>Activate_pos_sensor(base, IMU, stereocamera):</h4>
 This action is used to activate the sensors used for navigation. This action can only be activated when the rover is in the base.
 
-### *Destabilize(location, IMU, stereocamera)*
-This action is used to destabilize the rover once the position sensors are activated.
+* <h4>Deactivate_pos_sensor:</h4>
+This action is used to deactivate position sensor once the rover is on the basis location to send start the trasmission with the earth.
+The rover must be stabilized. 
 
-
-### *Move(location1, location2)*
+* <h4>Move(location1, location2):</h4>
 This action is used to move from one location to another. 
 To compute this action the rover must have the position sensor activated and it has to be destabilized.
 
+* <h4>Destabilize(location, IMU, stereocamera):</h4>
+This action is used to destabilize the rover once the position sensors are activated.
 
-### *Stabilize*
+* <h4>Stabilize:</h4>
 This action is used to stabilize the robot, means that the robot can't move anymore until Destabilize action happen.
 
+### Deployment of scientific instrument
 
-### *Untack*
+* <h4>Untack:</h4>
+This action is used to elongate the robotic arm of the rover. 
+To compute this action the rover must be stabilized in a location (hopefully in a location where we want to acquire some soil sample.
 
+* <h4>Positionate_ee:</h4>
+This action is used to positionate the end effector of the robotic arm in some configuration.
+The rover must be stabilized and the robotic arm must be elongated  and the analyzer sensor must be turned off to positionate the end effector.
 
-### *Positionate_ee*
-
-
-### *Activate_a_sensor*
-
-
-### *Acquire_data*
-
-
-### Deactivate_a_sensor
-
-
-### Retract
+* <h4>Retract:</h4>
+This action is used to retract the robotic arm once soil samples have been acquired.
+The rover must be stabilized and the analyzer sensor must be turned off.
 
 
-### Analayze_spectrocamera
+
+### Data collection
+
+* <h4>Activate_a_sensor:</h4>
+This action is used to activate an analyzer sensor when necessary.
+The rover must be stabilized, the robotic arm elongated and the end effetor positionated.
+
+* <h4>Deactivate_a_sensor:</h4>
+This action is used to deactivate an analyzer sensor when it's own task is completed.
+The rover must be stabilized, the robotic arm elongated and the end effetor positionated.
 
 
-### Analayze_radar
+### Data processing
+
+* <h4>Analayze_spectrocamera:</h4>
+
+* <h4>Analayze_radar:</h4>
+
+* <h4>Analayze_multicamera:</h4>
 
 
-### Analayze_multicamera
+### Decision making 
+
+* <h4>Acquire_data:</h4>
 
 
-### Prepare_trasmission
 
+### Data trasmission
 
-### Deactivate_pos_sensor
+* <h4>Prepare_trasmission:</h4>
 
+* <h4>Send_data:</h4>
 
-### Send_data
-
-
-### Close_trasmission
+* <h4>Close_trasmission:</h4>
 
 
 
