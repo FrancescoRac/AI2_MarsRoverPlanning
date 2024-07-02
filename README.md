@@ -59,26 +59,34 @@ The rover must be stabilized, the robotic arm elongated and the end effetor posi
 ### Data processing
 
 * <h4>Analayze_spectrocamera:</h4>
+This action is used to compute the analysis of samples acquired with the spectrocamera.
+The rover must be stabilized, and it has to have acquired samples.
 
 * <h4>Analayze_radar:</h4>
+This action is used to compute the analysis of samples acquired with the radar.
+The rover must be stabilized, and it has to have acquired samples.
 
 * <h4>Analayze_multicamera:</h4>
-
+This action is used to compute the analysis of samples acquired with the multicamera.
+The rover must be stabilized, and it has to have acquired samples.
 
 ### Decision making 
 
 * <h4>Acquire_data:</h4>
-
+Since in certain locations may be necessary to carry out a specific reading twice. This action must be used each time a sensor have to acquire data.
+The rover must be stabilized and the arm elongated.
 
 
 ### Data trasmission
 
-* <h4>Prepare_trasmission:</h4>
+* <h4>Prepare_transmission:</h4>
+This action is used to perpare the rover at the transmission of the data acquired.
 
 * <h4>Send_data:</h4>
+This action is used to send the data acuired once the transmission is ready.
 
-* <h4>Close_trasmission:</h4>
-
+* <h4>Close_transmission:</h4>
+This action is used to close the transmission once it the rover has done.
 
 
 
